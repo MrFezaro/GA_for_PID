@@ -3,4 +3,4 @@ project(GA_for_PID)
 
 set(CMAKE_CXX_STANDARD 26)
 
-add_executable(GA_for_PID main.cpp)
+add_subdirectory(src)
