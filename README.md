@@ -59,6 +59,5 @@ Goal achieved! Generation: 42
 Best score: 0.102
 Best parameters: Kp=12.3 Ki=8.5 Kd=0.7
 ```
----
-### Acknowledgments
+## Acknowledgments
 Shoutout to C++ and its std::vector data type <3
