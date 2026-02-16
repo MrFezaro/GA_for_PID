@@ -53,7 +53,7 @@ After running, the program outputs:
 - Best score found  
 - Best PID parameters (`Kp`, `Ki`, `Kd`)  
 
-### Example Output
+Example Output:
 ```
 Goal achieved! Generation: 42
 Best score: 0.102
