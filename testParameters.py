@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Simulation parameters
-dt = 0.01          # Smaller dt for stability
+dt = 0.01       
 T = 5.0
 time = np.arange(0, T, dt)
 
