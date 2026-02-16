@@ -24,11 +24,7 @@ This project implements a **Continuous Genetic Algorithm (CGA)** in C++ to optim
   - `mutation.hpp` – Mutation operations for GA
 
 - **`testParameters.py`**  
-  Python script used to simulate the system and plot graphs of the controller performance.
-
-## Python Visualization
-
-After running the GA, you can use `testParameters.py` to simulate the system with the resulting parameters and plot a step respone graph.
+  After running the GA, you can use `testParameters.py` to simulate the system with the resulting parameters and plot a step response graph.
 
 ## Configuration
 
