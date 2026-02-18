@@ -6,13 +6,13 @@
 
 int main() {
     // Configuration
-    int populationSize = 10000;
-    int maxGenerations = 1000;
+    int populationSize = 1000;
+    int maxGenerations = 100;
     int generation = 0;
     float mutationRate = 0.5;
     float mutationStrength = 0.01;
-    float goal = 0.1;
-    vector<float> genes = {20, 20, 20, 100000}; // PID parameter limits + default score
+    float goal = 0.115;
+    vector<float> genes = {10, 10, 10, 100000}; // PID parameter limits + default score
     //vector<float> genes = {5, 5, 5, 10, 10, 100000}; // SEC parameter limits + default score
 
     // Generate population
