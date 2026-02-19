@@ -24,7 +24,7 @@ inline void crossover(vector<vector<float>>& population, int targetPopulationSiz
             child[i] = (i < crossPoint) ? p1[i] : p2[i];
         }
 
-        child.back() = 100.0f; // reset score
+        child.back() = 100000.0f; // reset score
         population.push_back(child);
     }
 }

@@ -6,7 +6,7 @@
 
 int main() {
     // Configuration
-    int populationSize = 1000;
+    int populationSize = 50;
     int maxGenerations = 100;
     int generation = 0;
     float mutationRate = 0.5;
@@ -20,18 +20,18 @@ int main() {
 
     // Evolution loop
     while (generation < maxGenerations) {
-        // Simulate system and store scores in population
-        simulateSystemPID(population);
+        simulateSystemPID(population); // Simulate system and store scores in population
         //simulateSystemSEC(population);
-        // Sort population by score
-        selectBestHalf(population);
-        // Check if best score meets goal
-        if (population[0].back() <= goal)
+
+        selectBestHalf(population); // Sort population by score
+
+        if (population[0].back() <= goal) // Check if best score meets goal
             break;
-        // Crossover
-        crossover(population, populationSize);
-        // Mutation
-        mutate(population, genes, mutationRate, mutationStrength);
+        cout << "Generation: " << generation << "   Score: " << population[0].back() << endl;
+
+        crossover(population, populationSize); // Crossover
+
+        mutate(population, genes, mutationRate, mutationStrength); // Mutation
 
         generation++;
     }
